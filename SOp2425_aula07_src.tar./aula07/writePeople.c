@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
+#include <string.h>
 
 typedef struct
 {
@@ -16,6 +17,7 @@ void printPersonInfo(Person *p)
 
 int main (int argc, char *argv[])
 {
+    int numpeople;
     FILE *fp = NULL;
     int i;
     Person p = {35, 1.65, "xpto"};
@@ -36,12 +38,31 @@ int main (int argc, char *argv[])
         return EXIT_FAILURE;
     }
 
+    printf("Quantas pessoas queres: ");
+    scanf("%d", &numpeople);
+
     /* Write 10 itens on a file */
-    for(i = 0 ; i < 10 ; i++)
-    {    
-        p.age = p.age+1;
-        p.height = p.height+0.03;
-        fwrite(&p, sizeof(Person), 1, fp);
+    for(i = 1 ; i <= numpeople ; i++)
+    {   
+        printf("Introduza a idade da pessoa %d: ", i);
+        scanf("%d", &p.age);
+
+        printf("Introduza a altura da pessoa %d: ", i);
+        scanf("%lf", &p.height);
+
+        int c;
+        while ((c = getchar()) != '\n' && c != EOF);
+
+        printf("Introduza o nome da pessoa %d: ", i);
+        fgets(p.name, sizeof(p.name), stdin);
+        p.name[strcspn(p.name, "\n")] = '\0';
+
+        if (fwrite(&p, sizeof(Person), 1, fp) != 1) {
+            perror("Erro ao escrever no ficheiro");
+            fclose(fp);
+            return EXIT_FAILURE;
+        }
+
     }
 
     fclose(fp);
