@@ -4,7 +4,7 @@
 int main(int argc, char **argv) {
     int sum;
     if (argc != 3) {
-        printf("Introduz apenas dois argumentos.");
+        printf("Introduz apenas dois argumentos. \n");
         return EXIT_FAILURE;
     }
 
@@ -13,6 +13,6 @@ int main(int argc, char **argv) {
 
     sum = num1 + num2;
 
-    printf("A soma dos valores é %d", sum);
+    printf("A soma dos valores é %d \n", sum);
     return EXIT_SUCCESS;
 }
