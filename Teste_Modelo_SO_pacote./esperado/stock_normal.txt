@@ -1,0 +1,8 @@
+Produto      Qtd    Preco     Valor
+parafuso     120     0.05      6.00
+porca         80     0.03      2.40
+martelo        5    12.50     62.50
+chave         12     8.90    106.80
+alicate        0    15.00      0.00
+serra          3    22.30     66.90
+Valor total em stock: 244.60

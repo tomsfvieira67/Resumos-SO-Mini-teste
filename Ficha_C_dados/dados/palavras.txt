@@ -1,0 +1,10 @@
+sol
+lua
+mar
+sol
+rio
+lua
+sol
+ceu
+mar
+vento

@@ -1,0 +1,6 @@
+parafuso 120 0.05
+porca 80 0.03
+martelo 5 12.50
+chave 12 8.90
+alicate 0 15.00
+serra 3 22.30

@@ -1,0 +1,10 @@
+Ana: 15 (Bom)
+Bruno: 8 (Reprovado)
+Carla: 18 (Excelente)
+Diogo: 10 (Suficiente)
+Eva: 12 (Suficiente)
+Filipe: 7 (Reprovado)
+Gil: 14 (Bom)
+Media: 12.00
+Aprovados: 5 de 7
+Melhor: Carla (18)

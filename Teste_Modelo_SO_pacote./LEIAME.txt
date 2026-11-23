@@ -1,0 +1,15 @@
+TESTE MODELO - SISTEMAS OPERATIVOS
+==================================
+Conteudo:
+  prova/            ficheiros a completar (notas.sh, stock.c, prodcon.c) e dados (notas.txt, stock.txt)
+  esperado/         saidas de referencia usadas pelo verificar.sh
+  verificar.sh      verificacao automatica (usar so no fim, para treino)
+
+Como fazer:
+  1. Le o PDF "Teste_Modelo_SO.pdf" (enunciado).
+  2. Trabalha so nos ficheiros da pasta prova/, durante 150 minutos, com consulta APENAS dos guioes (PDF)
+     e do codigo de apoio (como no teste real).
+  3. No fim: ./verificar.sh   (na pasta onde esta prova/)
+  4. Compara com "Teste_Modelo_SO_Resolucao.pdf" e atribui a cotacao.
+
+Compilar:  gcc -Wall -o stock stock.c        gcc -Wall -o prodcon prodcon.c -pthread

@@ -1,0 +1,10 @@
+Ana 15
+Bruno 8
+Carla 18
+Diogo 10
+
+Eva 12
+Filipe 7
+Gil 14
+Hugo 25
+Ines 30
